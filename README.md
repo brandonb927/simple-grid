@@ -1,4 +1,6 @@
-## Simple Grid - based on Chris Coyier's post [Don't Overthink It Grids](http://css-tricks.com/dont-overthink-it-grids/)
+## Simple Grid
+
+#### Based on Chris Coyier's post [Don't Overthink It Grids](http://css-tricks.com/dont-overthink-it-grids/)
 
 Modified to use LESS CSS, and REM instead of pixel units.
 
