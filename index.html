@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Don't Overthink It Grids</title>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.3/normalize.min.css">
+    <link rel="stylesheet/less" href="less/simple-grid.less">
+
+    <script>
+        less = {
+            env: "development",
+        }
+    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.5.0/less.min.js"></script>
+    <script>
+        less.watch()
+    </script>
+</head>
+<body>
+    <h1>Don't Overthink It Grids <em>(while we wait for flexbox!)</em></h1>
+
+    <div class="grid">
+        <div class="column two-thirds">
+            <div class="module">
+                <h3>2/3</h3>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </div>
+        </div>
+        <div class="column one-third">
+            <div class="module">
+                <h3>1/3</h3>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid gutter">
+        <div class="column two-thirds">
+            <div class="module">
+                <h3>2/3 (Opt-in Outside Padding)</h3>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </div>
+        </div>
+        <div class="column one-third">
+            <div class="module">
+                <h3>1/3</h3>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid gutter">
+        <div class="column one-eigth">
+            <div class="module">
+                <h3>1/8</h3>
+            </div>
+        </div>
+        <div class="column one-eigth">
+            <div class="module">
+                <h3>1/8</h3>
+            </div>
+        </div>
+        <div class="column one-eigth">
+            <div class="module">
+                <h3>1/8</h3>
+            </div>
+        </div>
+        <div class="column one-eigth">
+            <div class="module">
+                <h3>1/8</h3>
+            </div>
+        </div>
+        <div class="column one-eigth">
+            <div class="module">
+                <h3>1/8</h3>
+            </div>
+        </div>
+        <div class="column one-eigth">
+            <div class="module">
+                <h3>1/8</h3>
+            </div>
+        </div>
+        <div class="column one-eigth">
+            <div class="module">
+                <h3>1/8</h3>
+            </div>
+        </div>
+        <div class="column one-eigth">
+            <div class="module">
+                <h3>1/8</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="column full-width">
+            <div class="module">
+                <h3>1/1 - Inception</h3>
+                <div class="grid gutter">
+                    <div class="column one-fourth">
+                        <div class="module">
+                            <h3>1/4</h3>
+                        </div>
+                    </div>
+                    <div class="column one-half">
+                        <div class="module">
+                            <h3>1/2</h3>
+                            <div class="grid">
+                                <div class="column one-fourth">
+                                    <div class="module">
+                                        <h3>1/4</h3>
+                                    </div>
+                                </div>
+                                <div class="column one-half">
+                                    <div class="module">
+                                        <h3>1/2</h3>
+                                        <div class="grid gutter">
+                                            <div class="column one-fourth">
+                                                <div class="module">
+                                                    <h3>1/4</h3>
+                                                </div>
+                                            </div>
+                                            <div class="column one-half">
+                                                <div class="module">
+                                                    <h3>1/2</h3>
+                                                </div>
+                                            </div>
+                                            <div class="column one-fourth">
+                                                <div class="module">
+                                                    <h3>1/4</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column one-fourth">
+                                    <div class="module">
+                                        <h3>1/4</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column one-fourth">
+                        <div class="module">
+                            <h3>1/4</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid gutter">
+        <div class="column one-fourth">
+            <div class="module">
+                <h3>1/4</h3>
+            </div>
+        </div>
+        <div class="column one-half">
+            <div class="module">
+                <h3>1/2</h3>
+                <div class="grid gutter">
+                    <div class="column one-fourth">
+                        <div class="module">
+                            <h3>1/4</h3>
+                        </div>
+                    </div>
+                    <div class="column one-half">
+                        <div class="module">
+                            <h3>1/2</h3>
+                        </div>
+                    </div>
+                    <div class="column one-fourth">
+                        <div class="module">
+                            <h3>1/4</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column one-fourth">
+            <div class="module">
+                <h3>1/4</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid gutter">
+        <div class="column one-fourth">
+            <div class="module">
+                <h3>1/4</h3>
+            </div>
+        </div>
+        <div class="column one-half">
+            <div class="module">
+                <h3>1/2</h3>
+                <div class="grid">
+                    <div class="column one-fourth">
+                        <div class="module">
+                            <h3>1/4</h3>
+                        </div>
+                    </div>
+                    <div class="column one-half">
+                        <div class="module">
+                            <h3>1/2</h3>
+                        </div>
+                    </div>
+                    <div class="column one-fourth">
+                        <div class="module">
+                            <h3>1/4</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column one-fourth">
+            <div class="module">
+                <h3>1/4</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

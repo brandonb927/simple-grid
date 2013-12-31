@@ -1,0 +1,32 @@
+{
+    "name": "simple-grid",
+    "description": "Very simple to use grid system that is versatile and light.",
+    "version": "0.1.0",
+    "homepage": "https://github.com/brandonb927/simple-grid",
+    "author": "Brandon Brown",
+    "contributors": [
+        {
+            "name": "Brandon Brown",
+            "email": "brandon@brandonbrown.io"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/brandonb927/simple-grid.git"
+    },
+    "bugs": {
+        "url": "https://github.com/brandonb927/simple-grid/issues"
+    },
+    "licenses": [
+        {
+            "type": "WTFPL",
+            "url": "http://www.wtfpl.net/txt/copying/"
+        }
+    ],
+    "devDependencies": {
+        "grunt": "~0.4.2",
+        "grunt-banner": "~0.2.0",
+        "grunt-contrib-less": "~0.8.3",
+        "grunt-contrib-watch": "~0.5.3"
+    }
+}
