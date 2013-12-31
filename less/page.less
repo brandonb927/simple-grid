@@ -6,15 +6,30 @@ html {
 
 body {
     font-size: @base-font-size;
-    padding: (@base-padding / 2) (@base-padding * 2.5) (@base-padding * 10);
+    padding: (@base-padding / 2) (@base-padding * 2.5) (@base-padding * 3);
     background-color: #222;
 }
 
 h1 {
     color: white;
 
-    em {
-      color: #666;
-      font-size: 1rem;
+    small {
+        color: #666;
+        font-size: 1rem;
     }
+
+    a {
+        color: lighten(#666, 25%);
+
+        &:active,
+        &:hover {
+            color: lighten(#666, 10%);
+        }
+    }
+}
+
+// Add a nice border around grids and modules
+.grid,
+.module {
+    border-radius: .3125rem;
 }

@@ -44,6 +44,9 @@
 .gutter > .column:first-child {
   padding-left: 1.25rem;
 }
+.full-width {
+  width: 100%;
+}
 .one-third {
   width: 33.33%;
 }
@@ -78,13 +81,24 @@ html {
 }
 body {
   font-size: 1rem;
-  padding: 0.625rem 3.125rem 12.5rem;
+  padding: 0.625rem 3.125rem 3.75rem;
   background-color: #222;
 }
 h1 {
   color: white;
 }
-h1 em {
+h1 small {
   color: #666;
   font-size: 1rem;
+}
+h1 a {
+  color: #a6a6a6;
+}
+h1 a:active,
+h1 a:hover {
+  color: #808080;
+}
+.grid,
+.module {
+  border-radius: .3125rem;
 }
