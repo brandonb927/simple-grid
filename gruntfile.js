@@ -68,4 +68,5 @@ module.exports = function(grunt) {
 
   // Registered Grunt tasks
   grunt.registerTask('default', ['less', 'usebanner', 'watch']);
+  grunt.registerTask('dist', ['less', 'usebanner']);
 }
