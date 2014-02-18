@@ -1,79 +1,54 @@
 // Paul Irish says universal * selector is not bad!
 // http://www.paulirish.com/2012/box-sizing-border-box-ftw/
-*, *:before, *:after {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-}
+*,
+*:before,
+*:after { box-sizing: border-box; }
 
 // Grid wrapper
 .grid {
-    background: @grid-background-color;
-    margin: 0 0 @base-padding -@base-padding;
-
-    .clearfix();
+  background: @grid-background-color;
+  margin: 0 0 @base-padding -@base-padding;
+  .clearfix;
 }
 
 // column
 .column {
-    float: left;
-    padding-left: @base-padding;
+  float: left;
+  padding-left: @base-padding;
 
-    .grid,
-    &:first-child {
-        padding-left: 0;
-        margin-left: 0;
-
-    }
+  .grid,
+  &:first-child {
+    padding-left: 0;
+    margin-left: 0;
+  }
 }
 
 // Opt-in gutter padding
 .gutter {
-    padding: @base-padding @base-padding @base-padding 0;
+  padding: @base-padding @base-padding @base-padding 0;
 
-    > .column:first-child {
-        padding-left: @base-padding;
-    }
+  > .column:first-child { padding-left: @base-padding; }
 }
 
 // column types
-.full-width {
-    width: 100%;
-}
-
-.one-third {
-    width: 33.33%;
-}
-
-.two-thirds {
-    width: 66.66%;
-}
-
-.one-half {
-    width: 50%;
-}
-
-.one-fourth {
-    width: 25%;
-}
-
-.one-eigth {
-    width: 12.5%;
-}
+.full-width { width: 100%; }
+.one-third { width: 33.33%; }
+.two-thirds { width: 66.66%; }
+.one-half { width: 50%; }
+.one-fourth { width: 25%; }
+.one-eigth { width: 12.5%; }
 
 // Inner column
 .module {
-    padding: @base-padding;
-    background: #eee;
+  padding: @base-padding;
+  background: #eee;
 }
 
 // Smaller screens use 100% width
 @media (max-width: 47.9375em) {
-    .one-third,
-    .two-thirds,
-    .one-half,
-    .one-fourth,
-    .one-eigth {
-        width: 100%;
-    }
+  .one-third,
+  .two-thirds,
+  .one-half,
+  .one-fourth,
+  .one-eigth { width: 100%; }
 }

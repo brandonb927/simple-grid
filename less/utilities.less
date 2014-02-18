@@ -1,15 +1,15 @@
 // Nicolas Gallagher micro clearfix hack
 // http://necolas.github.io/normalize.css/
 .clearfix {
-    &:before,
-    &:after {
-        content: " ";
-        display: table;
-    }
+  *zoom: 1; // When supporting IE 7
 
-    &:after {
-        clear: both;
-    }
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
 
-    *zoom: 1; // When supporting IE 7
+  &:after {
+    clear: both;
+  }
 }
